@@ -110,5 +110,17 @@ main img {
 .contact button {
   display: block;
   width: 100%;
+}
+/* Stack each field nicely */
+#quote {
+  display: grid;
+  gap: 12px;              /* space between fields */
+}
+
+.contact label {
+  display: flex;          /* put label text above input */
+  flex-direction: column; 
+  gap: 6px;
+}
 
 
