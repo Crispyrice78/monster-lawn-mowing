@@ -76,57 +76,39 @@ main img {
 }
 /* Contact form */
 .contact {
-  max-width: 600px;        /* keeps it from stretching too wide */
-  margin: 40px auto;       /* centers it on the page */
+  max-width: 600px;
+  margin: 40px auto;
   padding: 20px;
-  background: white;       /* gives it a card look */
-  border-radius: 8px;      /* soft corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .contact h2 {
+  margin-top: 0;
   text-align: center;
   color: #2e7d32;
 }
 
 .contact label {
-  display: block;          /* stack labels on top of inputs */
-  margin: 15px 0 5px;
-  font-weight: bold;
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: 700;
 }
 
 .contact input,
-.contact textarea,
-.contact select {
+.contact select,
+.contact textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 10px 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1rem;
+  margin-bottom: 12px;
 }
 
 .contact button {
   display: block;
   width: 100%;
-  background: #2e7d32;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
 
-.contact button:hover {
-  background: #1b5e20;
-}
-
-.note {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #555;
-}
 
