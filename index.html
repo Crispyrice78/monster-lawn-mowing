@@ -1,42 +1,44 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Monster Lawn Mowing | 801-995-9929</title>
-  <meta name="description" content="Lawn mowing, edging, leaf removal, seasonal cleanup. Call or text 801-995-9929." />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <header>
-    <img src="./img/MONSTER%20LAWN%20MOWING.jpg" alt="Monster Lawn Mowing logo" width="200">
-    <h1>Monster Lawn Mowing</h1>
-    <p>"A Beautiful Yard Ain’t Too Hard"</p>
-    <p>Call us: 801-995-9929</p>
-  </header>
+  <section id="contact" class="contact">
+    <h2>Free estimate</h2>
 
-    <main>
-    <h2>Our Services</h2>
-    <ul class="services">
-      <li class="card">Lawn Mowing</li>
-      <li class="card">Edging</li>
-      <li class="card">Leaf Removal</li>
-      <li class="card">Seasonal Cleanup</li>
-    </ul>
+    <!-- Replace the action URL in Step 3 -->
+    <form id="quote" action="https://formspree.io/f/yourcode" method="POST">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
 
-    <a href="#contact" class="btn center">Get a Free Quote</a>
+      <label>
+        Phone
+        <input type="tel" name="phone" placeholder="801-555-1234" required>
+      </label>
 
-    <img src="./img/lawn1.jpg" alt="Freshly mowed yard" width="600">
-  </main>
+      <label>
+        Email
+        <input type="email" name="email" placeholder="optional">
+      </label>
 
+      <label>
+        Service needed
+        <select name="service" required>
+          <option value="" selected disabled>Select one</option>
+          <option>Lawn mowing</option>
+          <option>Edging</option>
+          <option>Leaf removal</option>
+          <option>Seasonal cleanup</option>
+        </select>
+      </label>
 
-  <footer>
-    <p>© <span id="y"></span> Monster Lawn Mowing</p>
-  </footer>
+      <label>
+        Message
+        <textarea name="message" rows="4" placeholder="Tell us about your yard" required></textarea>
+      </label>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+      <!-- Honeypot to block bots -->
+      <input type="text" name="_gotcha" style="display:none">
 
+      <button type="submit" class="btn">Send request</button>
+    </form>
+
+    <p class="note">Fastest reply is to text a photo to 801-995-9929</p>
+  </section>
