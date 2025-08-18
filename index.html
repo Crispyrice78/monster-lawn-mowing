@@ -27,6 +27,51 @@
     <a href="#contact" class="btn center">Get a Free Quote</a>
 
     <img src="./img/lawn1.jpg" alt="Freshly mowed yard" width="600">
+       <section id="contact" class="contact">
+    <h2>Free estimate</h2>
+
+    <!-- Replace the action URL in Step 3 -->
+    <form id="quote" action="https://formspree.io/f/yourcode" method="POST">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Phone
+        <input type="tel" name="phone" placeholder="801-555-1234" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" placeholder="optional">
+      </label>
+
+      <label>
+        Service needed
+        <select name="service" required>
+          <option value="" selected disabled>Select one</option>
+          <option>Lawn mowing</option>
+          <option>Edging</option>
+          <option>Leaf removal</option>
+          <option>Seasonal cleanup</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="4" placeholder="Tell us about your yard" required></textarea>
+      </label>
+
+      <!-- Honeypot to block bots -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="btn">Send request</button>
+    </form>
+
+    <p class="note">Fastest reply is to text a photo to 801-995-9929</p>
+  </section>
+
   </main>
 
 
